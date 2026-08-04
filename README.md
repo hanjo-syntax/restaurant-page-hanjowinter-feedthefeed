@@ -1,16 +1,145 @@
-# React + Vite
+# FEED THE FEED
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FEED THE FEED ist ein fiktives, auf Influencer und Social Media ausgerichtetes asiatisches Street-Food-Restaurant. Das Projekt entsteht im Rahmen eines Webentwicklungskurses und wird mit React und Tailwind CSS umgesetzt.
 
-Currently, two official plugins are available:
+Das Restaurant verbindet intensives asiatisches Street Food, zeitlich begrenzte Kooperationen mit Content Creators und visuell auffällige Gerichte, die speziell für soziale Medien inszeniert werden. Die visuelle Identität setzt auf dunkle Flächen, kräftige Typografie und Neonakzente in Pink, Cyan und Acid Yellow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Projektziele
 
-## React Compiler
+Ziel des Projekts ist es, eine moderne Restaurant-Website zu planen, zu gestalten und zu entwickeln.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Die Website soll:
 
-## Expanding the ESLint configuration
+- das Restaurant und sein Konzept präsentieren
+- die Speisekarte und einzelne Gerichte darstellen
+- Kontaktinformationen und Öffnungszeiten bereitstellen
+- Tischreservierungen ermöglichen
+- auf Desktop- und Mobilgeräten gut funktionieren
+- wiederverwendbare React-Komponenten verwenden
+- Tailwind CSS für das Styling einsetzen
+- einem einheitlichen Designsystem folgen
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Geplante Seiten
+
+Die Website soll folgende Seiten enthalten:
+
+- Startseite
+- Speisekarte
+- The Feed
+- Drops & Kooperationen
+- Reservierungen
+- Besuch & Kontakt
+
+Die erforderlichen Kernseiten sind die Startseite, die Speisekarte und die Kontaktseite.
+
+## Designprozess
+
+Die Benutzeroberfläche wurde vor Beginn der Entwicklung in Figma geplant.
+
+Der Designprozess umfasst:
+
+- Low-Fidelity-Wireframes
+- ein Desktop-Mockup der Startseite
+- Planung responsiver Layouts
+- wiederverwendbare UI-Komponenten
+- Typografiestile
+- Farbvariablen
+- Variablen für Abstände und Eckradien
+- Buttons, Badges, Formularfelder, Karten, Header und Footer
+
+Die Screenshots im Verzeichnis `docs` dokumentieren die aktuellen Planungs- und Designphasen.
+
+## Wireframes
+
+Die Wireframes befinden sich unter:
+
+```text
+docs/wireframes/
+```
+
+Aktuell enthalten sind:
+
+- Desktop-Startseite
+- Desktop-Speisekarte
+- Kontaktseite
+
+## Mockups
+
+Die High-Fidelity-Mockups befinden sich unter:
+
+```text
+docs/mockups/
+```
+
+Das Mockup der Startseite zeigt die finale visuelle Richtung einschließlich Typografie, Farben, Bildsprache und wiederverwendbarer UI-Komponenten.
+
+## Visuelle Identität
+
+### Farben
+
+Die Hauptfarbpalette besteht aus:
+
+- dunklen neutralen Hintergründen
+- Neonpink für primäre Aktionen
+- Cyan für sekundäre Aktionen und Links
+- Acid Yellow für Hervorhebungen und Badges
+- hellen neutralen Farben für Texte
+
+### Designstil
+
+Der visuelle Stil ist:
+
+- kraftvoll
+- urban
+- energiegeladen
+- auf soziale Medien ausgerichtet
+- von Neonästhetik inspiriert
+- stark visuell geprägt
+
+## Geplanter Technologie-Stack
+
+- React
+- Tailwind CSS
+
+## Geplante Komponentenstruktur
+
+```text
+src/
+├── components/
+│   ├── ui/
+│   │   ├── Button.jsx
+│   │   ├── Badge.jsx
+│   │   └── Input.jsx
+│   ├── cards/
+│   │   └── DishCard.jsx
+│   └── layout/
+│       ├── Header.jsx
+│       └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Menu.jsx
+│   └── Contact.jsx
+└── data/
+    └── dishes.js
+```
+
+## Aktueller Stand
+
+Der aktuelle Projektstand umfasst:
+
+- Restaurantkonzept abgeschlossen
+- Seitenstruktur geplant
+- Designsystem in Figma erstellt
+- Desktop-Wireframe der Startseite abgeschlossen
+- Desktop-Mockup der Startseite abgeschlossen
+- Desktop-Wireframe der Speisekarte abgeschlossen
+- wiederverwendbare UI-Komponenten in Figma vorbereitet
+- erste Screenshots zum Repository hinzugefügt
+
+## Figma
+
+Das vollständige Designsystem, die Wireframes und Mockups befinden sich im Figma-Projekt.
+
+```text
+https://www.figma.com/design/yjVR5965NmdjxblOntH5oA/Feed-the-Feed---Website?node-id=1-2&m=dev&t=AjzvXEdpYtQUwhWr-1
+```
