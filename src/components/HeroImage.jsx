@@ -9,4 +9,4 @@ export default function HeroImage({
             {badge && <figcaption className="badge">{badge}</figcaption>}
         </figure>
     );
-}‚
+}

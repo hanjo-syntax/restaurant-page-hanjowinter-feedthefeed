@@ -17,19 +17,20 @@ const defaultOpeningHours = [
     }
 ];
 
-export default function OpeningHours({ openingHours = defaultOpeningHours }) {
+export default function OpeningHours({
     title = "Opening Hours",
-    openingHours = defaultOpeningHours, }) {
+    openingHours = defaultOpeningHours }) {
     return (
-        <secction aria-labledby="opening-hours-heading" className="opening-hours">
-        <h2 id="opening-hours-heading" className="opening-hours__heading">{title}</h2>
-        <dl className="opening-hours__list"></dl>
-            {openingHours.map((days, hoursx) => (
-                <div key={days} className="opening-hours__item">
-                    <dt className="opening-hours__days">{days}</dt>
-                    <dd className="opening-hours__hours">{hours}</dd>
-                </div>
-            ))}
+        <section aria-labelledby="opening-hours-heading" className="opening-hours">
+            <h2 id="opening-hours-heading" className="opening-hours__heading">{title}</h2>
+            <dl className="opening-hours__list">
+                {openingHours.map(({ days, hours }) => (
+                    <div key={days} className="opening-hours__item">
+                        <dt className="opening-hours__days">{days}</dt>
+                        <dd className="opening-hours__hours">{hours}</dd>
+                    </div>
+                ))}
+            </dl>
         </section>
     );
 }
