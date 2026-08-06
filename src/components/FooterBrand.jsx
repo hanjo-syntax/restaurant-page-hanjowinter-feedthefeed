@@ -1,8 +1,8 @@
 export default function FooterBrand({ name, tagline }) {
     return (
-        <div className="footer__brand-column">
-            <a href="#home" className="footer__brand">{ name }</a>
-            <p className="footer__brand-description">{ tagline }</p>
+        <div>
+            <a href="#home" className="text-base font-black uppercase text-white">{ name }</a>
+            <p className="mt-4 text-zinc-500">{ tagline }</p>
         </div>
     );
 }

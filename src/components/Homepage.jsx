@@ -1,12 +1,65 @@
 import DishCard from './DishCard';
 import HeroSection from './HeroSection';
+import HeroImage from './HeroImage';
 import RestaurantName from './RestaurantName';
 import OpeningHours from './OpeningHours';
 import Navigation from './Navigation';  
 import Section from './Section';
 import SplitSection from './SplitSection';
 import IconFeatureRow from './IconFeatureRow';
-import DishCarRow from './DishCardRow';
+import DishCardRow from './DishCardRow';
+import ImageRow from './ImageRow';
+import Footer from './Footer';
+
+const dishes = [
+            {
+              badgeKind: 'Trending',
+              badgeColor:'yellow',
+              title: 'K-Pop Crunch Bao',
+              description:'Crispy, Kimchi. sesame and neon mayo',
+              price: '€8,50', tags:['vegan', 'spicy'],
+              imageUrl:'/images/korean-fried-cauliflower-bao.png'
+            },
+            {
+              badgeKind: 'CREATOR',
+              badgeColor:'cyan',
+              title: 'Tiger Ramen',
+              description:'Crispy, Kimchi. sesame and neon mayo',
+              price: '€8,50', tags:['vegan', 'spicy'],
+              imageUrl:'/images/spicy-corn-ramen-bowl.png'
+            },
+              {
+              badgeKind: 'vegan',
+              badgeColor:'green',
+              title: 'Seoul Glow Bowl',
+              description:'Crispy, Kimchi. sesame and neon mayo',
+              price: '€8,50', tags:['vegan', 'spicy'],
+              imageUrl:'/images/korean-tofu-rice-bowl.png'
+            },
+          ];
+
+const feedImages = [
+  {
+    src: '/images/pink-coconut-ramen-tofu-bowl.png',
+    alt: 'Pink coconut ramen bowl',
+  },
+  {
+    src: '/images/matcha-cheesecake-pink-cocktail.png',
+    alt: 'Matcha cheesecake and cocktail',
+  },
+  {
+    src: '/images/korean-tofu-rice-bowl-top-view.png',
+    alt: 'Korean tofu rice bowl',
+  },
+  {
+    src: '/images/korean-fried-cauliflower-bao-pair.png',
+    alt: 'Korean fried cauliflower bao',
+  },
+  {
+    src: '/images/neon-restaurant-table-pink-cocktail.png',
+    alt: 'Neon restaurant table',
+  },
+];
 
 export default function HomePage() {  
   return (  
@@ -26,9 +79,13 @@ export default function HomePage() {
 
         <SplitSection bg="bg-zinc-900" eyebrow="The Concept" 
         title="It's not just dinner. It's content."
-        image="/images/concept-image.png"
-        imageAlt="Concept Image"
-        description="FEED THE FEED combines bold Asian street food, changing creator collaborations and immersive photo spots. Every dish is designed to taste good before and after the camera comes out."
+          leftContent={
+              <div className="mt-6">
+                <p className="text-xl text-zinc-500">
+                  FEED THE FEED combines bold Asian street food, changing creator collaborations and immersive photo spots. Every dish is designed to taste good before and after the camera comes out.
+                </p>
+              </div>
+          }
         >
           <IconFeatureRow
             items={[
@@ -58,8 +115,70 @@ export default function HomePage() {
         title="The dishes taking over your feed" 
         description="Check out the latest dishes that are trending on your feed.">
 
-          
+          <DishCardRow dishes = {dishes}
+          />
         </Section>
+        <SplitSection
+          bg="bg-zinc-900"
+          eyebrow="Limited Creator Drop"
+          title="MiaMiso x Feed the Feed"
+          description="Nur für kurze Zeit erhältlich."
+          reverse='true'
+          leftContent={
+            <div className="mt-6">
+              <h3 className="text-xl font-black text-pink-400">
+                Pink Miso Ramen
+              </h3>
+              <p className='text-zinc-500 py-3'>
+                Creamy pink miso broth with chilli oil, crispy tofu, pak choi and beetroot noodles.
+              </p>
+              <button className="mt-4 rounded bg-pink-400 px-4 py-2 text-black">
+                Book a Table
+              </button>
+            </div>
+          }
+        >
+          <HeroImage 
+            src='/images/pink-coconut-ramen-tofu-bowl.png'
+            alt='Pink Miso Ramen'
+            badge='Limited to 500 bownls'
+          />
+
+        </SplitSection>
+
+        <Section
+          id="feed"
+          bg="bg-transparent"
+          eyebrow="The Feed"
+          title="Tag @feedthefeed.cgn or use #FeedTheFeed to get featured"
+        >
+          <ImageRow images={feedImages} />
+        </Section>
+
+        <SplitSection
+          bg="bg-transparent"
+          eyebrow="Visit us"
+          title="Find us"
+          reverse='false'
+          leftContent={
+            <div className="mt-6">
+              <p className='text-white py-3'>
+                FEED THE FEED<br/>
+                Venloer Straße 214<br/>
+                50823 Cologne, Germany  
+              </p>
+              <OpeningHours/>
+            </div>
+          }
+        >
+          <HeroImage 
+            src='/images/restaurant-location-map-ehrenfeld.png'
+            alt='Location Map of our Restaurant'
+            badge='-'
+          />
+
+        </SplitSection>
+        <Footer />
       </main>
     </div>
   );  

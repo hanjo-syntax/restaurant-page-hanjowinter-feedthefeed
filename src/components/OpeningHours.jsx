@@ -21,13 +21,13 @@ export default function OpeningHours({
     title = "Opening Hours",
     openingHours = defaultOpeningHours }) {
     return (
-        <section aria-labelledby="opening-hours-heading" className="opening-hours">
-            <h2 id="opening-hours-heading" className="opening-hours__heading">{title}</h2>
-            <dl className="opening-hours__list">
+        <section>
+            <h3 id="opening-hours-heading" className="text-3xl font-black text-white">{title}</h3>
+            <dl className="mt-5 text-sm">
                 {openingHours.map(({ days, hours }) => (
-                    <div key={days} className="opening-hours__item">
-                        <dt className="opening-hours__days">{days}</dt>
-                        <dd className="opening-hours__hours">{hours}</dd>
+                    <div key={days} className="flex items-center justify-between gap-6 py-3">
+                        <dt className="text-xs font-bold text-zinc-300#">{days}</dt>
+                        <dd className="shrink-0 text-xs font-black">{hours}</dd>
                     </div>
                 ))}
             </dl>
