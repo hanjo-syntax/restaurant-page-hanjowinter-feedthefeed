@@ -2,7 +2,7 @@ import IconFeature from './IconFeature';
 
 export default function IconFeatureRow({ items }) {
   return (
-    <div className="flex flex-row flex-wrap gap-6">
+    <div className="flex flex-col gap-6 sm:flex-row sm:flex-wrap">
       {items.map((item) => (
         <IconFeature
           key={item.label}

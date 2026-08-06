@@ -21,7 +21,7 @@ export default function DishCard({ badgeKind, badgeColor, title, description, pr
                 <p className='mt-3 text-sm leading-6 text-zinc-400'>{ description }</p>
                 <div className="mt-5 flex flex-wrap gap-x-3 gap-y-1">
                     {tags.map((tag) => (
-                        <span key={ tag } className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400#">{ tag }</span>
+                        <span key={ tag } className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">{ tag }</span>
                     ))}
                 </div>
             </div>

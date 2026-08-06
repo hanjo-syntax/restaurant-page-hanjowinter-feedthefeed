@@ -1,4 +1,3 @@
-import DishCard from './DishCard';
 import HeroSection from './HeroSection';
 import HeroImage from './HeroImage';
 import RestaurantName from './RestaurantName';
@@ -63,8 +62,8 @@ const feedImages = [
 
 export default function HomePage() {  
   return (  
-    <div className="min-h-screen bg-zinc-950 font-sans text-zinc-1000 selection:bg:bg-pink-500 selection:text-white">
-      <header className="mx-auto flex max-w-6x1 items-center justify-between px-6 py-6 ls:px-18">
+    <div className="min-h-screen bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
+      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-1">
         <RestaurantName/>
         <Navigation items={[
           { href: '#home', linkText: 'Home' },
@@ -74,7 +73,7 @@ export default function HomePage() {
           { href: '#visit', linkText: 'Visit' }
         ]} />
       </header>
-      <main className="mx-auto max-w-6x1 px-6 py-6 ls:px-10">
+      <main className="mx-auto px-6 py-6 lg:max-w-9xl lg:px-10">
         <HeroSection/>
 
         <SplitSection bg="bg-zinc-900" eyebrow="The Concept" 

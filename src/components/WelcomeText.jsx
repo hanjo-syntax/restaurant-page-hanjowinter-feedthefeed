@@ -3,7 +3,7 @@ export default function WelcomeText({ eyebrow, title, description }) {
     return (
         <div className="welcome-text">
             <p className="text-cyan-400 uppercase font-black">{ eyebrow }</p>
-                <h1 className="text-7xl font-bold uppercase">
+                <h1 className="text-4xl leading-tight font-bold uppercase sm:text-5xl md:text-7xl">
                     {parts.map((part, index) => (
                         <span key={index}>
                         {part.trim()}.

@@ -17,7 +17,7 @@ const socialLinks = [
 export default function Footer() {
     return (
         <footer className="mt-8 bg-zinc-900">
-            <div className="mx-auto flex max-w-6x1 flex-col gap-10 justify-between px-6 py-14 sm:flex-row sm:flex-wrap ls:flex-no-wrap la:px-10">
+            <div className="mx-auto flex max-w-6xl flex-col justify-between gap-10 px-6 py-14 sm:flex-row sm:flex-wrap lg:flex-nowrap lg:px-10">
                 <FooterBrand
                     name="Feed the Feed"
                     tagline="Asian street food. Made to share. Made to trend." />
@@ -44,7 +44,7 @@ export default function Footer() {
                 </div>
 
             </div>
-            <div className="mx-auto flex max-w-6x1 flex-wrap justify-between gap-4 border-t border-zinc-800 p-6 font-bold text-zinc-500 lg:px-10">
+            <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-zinc-800 p-6 font-bold text-zinc-500 lg:px-10">
                 <span>(C) 2026 FEED THE FEED</span>
                 <span>IMPRINT - PRIVACY - ALLERGENES</span>
             </div>

@@ -1,6 +1,5 @@
 import WelcomeText from './WelcomeText';
 import HeroImage from './HeroImage';
-import RestaurantName from './RestaurantName';
 
 export default function HeroSection({
     heroImageSrc = '/images/korean-tofu-rice-bowl.png',
@@ -11,14 +10,14 @@ export default function HeroSection({
     WelcomeTextDescription = 'Feed the Feed is a restaurant that serves delicious food and drinks. We are located in the heart of the city and we are open every day.'
 }) {
     return (
-        <section className="flex flex-1 flex-row items-center justify-center gap-12 py-16 px-40">
+        <section className="flex flex-1 flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-12 md:py-16 md:px-10">
             <div className="w-full">
                 <WelcomeText
                     eyebrow={WelcomeTextEyebrow}
                     title={WelcomeTextTitle}
                     description={WelcomeTextDescription}
                 />
-            <div className="mt-8 flex flex-wrap itelms-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a href="#" className="rounded-lg bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-pink-600">
                     Book a Table
                 </a>

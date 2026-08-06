@@ -1,7 +1,6 @@
 export default function HeroImage({ 
         src = '/images/korean-tofu-rice-bowl.png',
-        alt = "Hero Image",
-        badge = 'Most shared'
+        alt = "Hero Image"
     }) {
     return (
         <figure className="relative overflow-hidden rounded-sm">
