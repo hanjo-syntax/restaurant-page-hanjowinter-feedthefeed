@@ -22,12 +22,12 @@ export default function OpeningHours({
     openingHours = defaultOpeningHours }) {
     return (
         <section>
-            <h3 id="opening-hours-heading" className="text-3xl font-black text-white">{title}</h3>
+            <h3 id="opening-hours-heading" className="text-3xl font-heading text-white">{title}</h3>
             <dl className="mt-5 text-sm">
                 {openingHours.map(({ days, hours }) => (
                     <div key={days} className="flex items-center justify-between gap-6 py-3">
-                        <dt className="text-xs font-bold text-zinc-300#">{days}</dt>
-                        <dd className="shrink-0 text-xs font-black">{hours}</dd>
+                        <dt className="text-lg font-bold text-zinc-300#">{days}</dt>
+                        <dd className="shrink-0 text-lg font-black">{hours}</dd>
                     </div>
                 ))}
             </dl>

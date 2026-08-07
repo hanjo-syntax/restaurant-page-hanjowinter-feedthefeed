@@ -38,40 +38,42 @@ const dishes = [
           ];
 
 const feedImages = [
-  {
-    src: '/images/pink-coconut-ramen-tofu-bowl.png',
-    alt: 'Pink coconut ramen bowl',
-  },
-  {
-    src: '/images/matcha-cheesecake-pink-cocktail.png',
-    alt: 'Matcha cheesecake and cocktail',
-  },
-  {
-    src: '/images/korean-tofu-rice-bowl-top-view.png',
-    alt: 'Korean tofu rice bowl',
-  },
-  {
-    src: '/images/korean-fried-cauliflower-bao-pair.png',
-    alt: 'Korean fried cauliflower bao',
-  },
-  {
-    src: '/images/neon-restaurant-table-pink-cocktail.png',
-    alt: 'Neon restaurant table',
-  },
+          {
+            src: '/images/pink-coconut-ramen-tofu-bowl.png',
+            alt: 'Pink coconut ramen bowl',
+          },
+          {
+            src: '/images/matcha-cheesecake-pink-cocktail.png',
+            alt: 'Matcha cheesecake and cocktail',
+          },
+          {
+            src: '/images/korean-tofu-rice-bowl-top-view.png',
+            alt: 'Korean tofu rice bowl',
+          },
+          {
+            src: '/images/korean-fried-cauliflower-bao-pair.png',
+            alt: 'Korean fried cauliflower bao',
+          },
+          {
+            src: '/images/neon-restaurant-table-pink-cocktail.png',
+            alt: 'Neon restaurant table',
+          },
 ];
+
+const navItems= [
+          { href: '#home', linkText: 'Home' },
+          { href: '#menu', linkText: 'Menu' },
+          { href: '#feed', linkText: 'The Feed' },
+          { href: '#drops', linkText: 'Drops' },
+          { href: '#visit', linkText: 'Visit' }
+        ];
 
 export default function HomePage() {  
   return (  
     <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-10 lg:max-w-full">
         <RestaurantName/>
-        <Navigation items={[
-          { href: '#home', linkText: 'Home' },
-          { href: '#menu', linkText: 'Menu' },
-          { href: '#feed', linkText: 'The Feed' },
-          { href: '#drops', linkText: 'Drops' },
-          { href: '#visit', linkText: 'Visit' }
-        ]} />
+        <Navigation items={navItems} />
       </header>
       <main className="mx-auto px-6 py-6 lg:max-w-9xl lg:px-10">
         <HeroSection/>
@@ -161,7 +163,7 @@ export default function HomePage() {
           reverse='false'
           leftContent={
             <div className="mt-6">
-              <p className='text-white py-3'>
+              <p className='text-zinc-400 py-3 font-bold text-xl'>
                 FEED THE FEED<br/>
                 Venloer Straße 214<br/>
                 50823 Cologne, Germany  
