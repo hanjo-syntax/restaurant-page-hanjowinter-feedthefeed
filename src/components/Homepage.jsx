@@ -12,27 +12,27 @@ import Footer from './Footer';
 import Button from './Button';
 const dishes = [
             {
-              badgeKind: 'Trending',
+              badgeKind: 'Im Trend',
               badgeColor:'yellow',
               title: 'K-Pop Crunch Bao',
-              description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '8,50', tags:['vegan', 'spicy'],
+              description:'Knusprig, Kimchi, Sesam und Neon-Mayo',
+              price: '8,50', tags:['vegan', 'scharf'],
               imageUrl:'/images/korean-fried-cauliflower-bao.png'
             },
             {
               badgeKind: 'CREATOR',
               badgeColor:'cyan',
               title: 'Tiger Ramen',
-              description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '8,50', tags:['vegan', 'spicy'],
+              description:'Knusprig, Kimchi, Sesam und Neon-Mayo',
+              price: '8,50', tags:['vegan', 'scharf'],
               imageUrl:'/images/spicy-corn-ramen-bowl.png'
             },
               {
-              badgeKind: 'vegan',
+              badgeKind: 'VEGAN',
               badgeColor:'green',
               title: 'Seoul Glow Bowl',
-              description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '8,50', tags:['vegan', 'spicy'],
+              description:'Knusprig, Kimchi, Sesam und Neon-Mayo',
+              price: '8,50', tags:['vegan', 'scharf'],
               imageUrl:'/images/korean-tofu-rice-bowl.png'
             },
           ];
@@ -40,32 +40,32 @@ const dishes = [
 const feedImages = [
           {
             src: '/images/pink-coconut-ramen-tofu-bowl.png',
-            alt: 'Pink coconut ramen bowl',
+            alt: 'Ramen-Schale mit rosa Kokosbrühe',
           },
           {
             src: '/images/matcha-cheesecake-pink-cocktail.png',
-            alt: 'Matcha cheesecake and cocktail',
+            alt: 'Matcha-Käsekuchen und Cocktail',
           },
           {
             src: '/images/korean-tofu-rice-bowl-top-view.png',
-            alt: 'Korean tofu rice bowl',
+            alt: 'Koreanische Tofu-Reisschale',
           },
           {
             src: '/images/korean-fried-cauliflower-bao-pair.png',
-            alt: 'Korean fried cauliflower bao',
+            alt: 'Koreanische Bao mit frittiertem Blumenkohl',
           },
           {
             src: '/images/neon-restaurant-table-pink-cocktail.png',
-            alt: 'Neon restaurant table',
+            alt: 'Restauranttisch mit Neonbeleuchtung',
           },
 ];
 
 const navItems= [
-          { href: '#home', linkText: 'Home' },
-          { href: '#menu', linkText: 'Menu' },
-          { href: '#feed', linkText: 'The Feed' },
-          { href: '#drops', linkText: 'Drops' },
-          { href: '#visit', linkText: 'Visit' }
+          { href: '#home', linkText: 'Startseite' },
+          { href: '#menu', linkText: 'Speisekarte' },
+          { href: '#feed', linkText: 'Der Feed' },
+          { href: '#drops', linkText: 'Aktionen' },
+          { href: '#visit', linkText: 'Besuch' }
         ];
 
 export default function HomePage() {  
@@ -78,12 +78,12 @@ export default function HomePage() {
       <main className="py-6">
         <HeroSection/>
 
-        <SplitSection bg="bg-zinc-900" eyebrow="The Concept" 
-        title="It's not just dinner. It's content."
+        <SplitSection bg="bg-zinc-900" eyebrow="Das Konzept" 
+        title="Es ist nicht nur Abendessen. Es ist Content."
           leftContent={
               <div className="mt-6">
                 <p className="text-xl text-zinc-500 font-bold">
-                  FEED THE FEED combines bold Asian street food, changing creator collaborations and immersive photo spots. Every dish is designed to taste good before and after the camera comes out.
+                  FEED THE FEED verbindet kräftiges asiatisches Streetfood, wechselnde Creator-Kooperationen und immersive Fotospots. Jedes Gericht schmeckt gut – vor und nach dem Auslösen der Kamera.
                 </p>
               </div>
           }
@@ -92,57 +92,57 @@ export default function HomePage() {
             items={[
               {
                 icon: '/images/neon-noodle-bowl-illustration.png',
-                label: 'Bold Asian Street Food',
+                label: 'Kräftiges asiatisches Streetfood',
                 caption:
-                  'Our menu is inspired by the bold flavors of Asian street food, with a focus on fresh ingredients and unique flavor combinations.',
+                  'Unsere Speisekarte ist von den kräftigen Aromen asiatischen Streetfoods inspiriert – mit frischen Zutaten und einzigartigen Geschmackskombinationen.',
               },
               {
                 icon: '/images/neon-sushi-bowl-illustration.png',
-                label: 'Creator Collaborations',
+                label: 'Creator-Kooperationen',
                 caption:
-                  'We collaborate with different creators to bring you new and exciting dishes that are designed to be shared and enjoyed.',
+                  'Wir arbeiten mit verschiedenen Creators zusammen und bringen dir neue, aufregende Gerichte zum Teilen und Genießen.',
               },
               {
                 icon: '/images/neon-camera-illustration.png',
-                label: 'Immersive Photo Spots',
+                label: 'Immersive Fotospots',
                 caption:
-                  'Our restaurant is designed to be a visual experience, with immersive photo spots that are perfect for capturing your dining experience.',
+                  'Unser Restaurant ist ein visuelles Erlebnis – mit immersiven Fotospots, die deine kulinarischen Momente perfekt festhalten.',
               },
             ]}
           />
         </SplitSection>
         <Section bg="none" 
-        eyebrow="Trending now" 
-        title="The dishes taking over your feed" 
-        description="Check out the latest dishes that are trending on your feed.">
+        eyebrow="Jetzt im Trend" 
+        title="Diese Gerichte erobern deinen Feed" 
+        description="Entdecke die neuesten Gerichte, die gerade in deinem Feed im Trend liegen.">
 
           <DishCardRow dishes = {dishes}
           />
         </Section>
         <SplitSection
           bg="bg-zinc-900"
-          eyebrow="Limited Creator Drop"
+          eyebrow="Limitierter Creator-Drop"
           title="MiaMiso x Feed the Feed"
           description="Nur für kurze Zeit erhältlich."
           reverse='true'
           leftContent={
             <div className="mt-6">
               <h3 className="text-xl font-black text-pink-400">
-                Pink Miso Ramen
+                Pinkes Miso-Ramen
               </h3>
               <p className='text-zinc-500 py-3'>
-                Creamy pink miso broth with chilli oil, crispy tofu, pak choi and beetroot noodles.
+                Cremige pinke Miso-Brühe mit Chiliöl, knusprigem Tofu, Pak Choi und Rote-Bete-Nudeln.
               </p>
                 <Button href="#book" variant="primary">
-                    Book a Table
+                    Tisch reservieren
                 </Button> 
             </div>
           }
         >
           <HeroImage 
             src='/images/pink-coconut-ramen-tofu-bowl.png'
-            alt='Pink Miso Ramen'
-            badge='Limited to 500 bownls'
+            alt='Pinkes Miso-Ramen'
+            badge='Auf 500 Schalen limitiert'
           />
 
         </SplitSection>
@@ -150,23 +150,23 @@ export default function HomePage() {
         <Section
           id="feed"
           bg="bg-transparent"
-          eyebrow="The Feed"
-          title="Tag @feedthefeed.cgn or use #FeedTheFeed to get featured"
+          eyebrow="Der Feed"
+          title="Markiere @feedthefeed.cgn oder nutze #FeedTheFeed, um vorgestellt zu werden"
         >
           <ImageRow images={feedImages} />
         </Section>
 
         <SplitSection
           bg="bg-transparent"
-          eyebrow="Visit us"
-          title="Find us"
+          eyebrow="Besuche uns"
+          title="So findest du uns"
           reverse='false'
           leftContent={
             <div className="mt-6">
               <p className='text-zinc-400 py-3 font-bold text-xl'>
                 FEED THE FEED<br/>
                 Venloer Straße 214<br/>
-                50823 Cologne, Germany  
+                50823 Köln, Deutschland  
               </p>
               <OpeningHours/>
             </div>
@@ -174,7 +174,7 @@ export default function HomePage() {
         >
           <HeroImage 
             src='/images/restaurant-location-map-ehrenfeld.png'
-            alt='Location Map of our Restaurant'
+            alt='Lageplan unseres Restaurants'
             badge='-'
           />
 

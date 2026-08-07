@@ -1,24 +1,24 @@
 const defaultOpeningHours = [
     {
-        days: 'Tuesday - Thursday',
+        days: 'Dienstag – Donnerstag',
         hours: '17:00 - 23:00',
     },
     {
-        days: 'Friday - Saturday',
+        days: 'Freitag – Samstag',
         hours: '17:00 - 01:00',
     },
     {
-        days: 'Sunday',
+        days: 'Sonntag',
         hours: '15:00 - 22:00',
     },
     {
-        days: 'Monday',
-        hours: 'Closed',
+        days: 'Montag',
+        hours: 'Geschlossen',
     }
 ];
 
 export default function OpeningHours({
-    title = "Opening Hours",
+    title = "Öffnungszeiten",
     openingHours = defaultOpeningHours }) {
     return (
         <section>

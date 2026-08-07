@@ -1,6 +1,6 @@
 export default function HeroImage({ 
         src = '/images/korean-tofu-rice-bowl.png',
-        alt = "Hero Image"
+        alt = "Gericht von Feed the Feed"
     }) {
     return (
         <figure className="relative overflow-hidden rounded-sm">

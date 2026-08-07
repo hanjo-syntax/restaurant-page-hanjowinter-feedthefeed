@@ -1,8 +1,8 @@
-import HomePage from './components/Homepage';
+import MenuPage from './components/MenuPage';
 
 export default function App() {
 
   return (
-    <HomePage />
+    <MenuPage />
   )
 }
