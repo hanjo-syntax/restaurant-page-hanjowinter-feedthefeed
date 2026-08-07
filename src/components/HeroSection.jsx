@@ -1,5 +1,6 @@
 import WelcomeText from './WelcomeText';
 import HeroImage from './HeroImage';
+import Button from './Button';
 
 export default function HeroSection({
     heroImageSrc = '/images/korean-tofu-rice-bowl.png',
@@ -18,9 +19,9 @@ export default function HeroSection({
                     description={WelcomeTextDescription}
                 />
             <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a href="#" className="rounded-lg bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-pink-600">
+                <Button href="#book" variant="primary">
                     Book a Table
-                </a>
+                </Button> 
                 <a href="#" className="rounded-lg border border-pink-500 px-6 py-3 text-sm font-semibold text-pink-500 transition-colors hover:bg-pink-500 hover:text-white">
                     Explore the Menu
                 </a>

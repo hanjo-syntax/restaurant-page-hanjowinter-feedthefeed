@@ -9,7 +9,7 @@ import IconFeatureRow from './IconFeatureRow';
 import DishCardRow from './DishCardRow';
 import ImageRow from './ImageRow';
 import Footer from './Footer';
-
+import Button from './Button';
 const dishes = [
             {
               badgeKind: 'Trending',
@@ -131,9 +131,9 @@ export default function HomePage() {
               <p className='text-zinc-500 py-3'>
                 Creamy pink miso broth with chilli oil, crispy tofu, pak choi and beetroot noodles.
               </p>
-              <button className="mt-4 rounded bg-pink-400 px-4 py-2 text-black">
-                Book a Table
-              </button>
+                <Button href="#book" variant="primary">
+                    Book a Table
+                </Button> 
             </div>
           }
         >
