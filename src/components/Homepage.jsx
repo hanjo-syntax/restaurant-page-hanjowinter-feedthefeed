@@ -75,7 +75,7 @@ export default function HomePage() {
         <RestaurantName/>
         <Navigation items={navItems} />
       </header>
-      <main className="mx-auto px-6 py-6 lg:max-w-9xl lg:px-10">
+      <main className="py-6">
         <HeroSection/>
 
         <SplitSection bg="bg-zinc-900" eyebrow="The Concept" 

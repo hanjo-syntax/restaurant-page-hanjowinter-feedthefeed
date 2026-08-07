@@ -7,7 +7,7 @@ export default function SplitSection({
   children,
 }) {
   return (
-    <section className={`${bg} flex flex-col px-0 md:flex-row md:px-10 lg:px-30 ${reverse ? 'md:flex-row-reverse' : ''}`}>
+    <section className={`${bg} flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''}`}>
       <div className="flex w-full flex-col justify-center p-5 sm:p-8 md:w-1/2">
         <p className="mb-2 text-sm font-black uppercase text-cyan-400">
           {eyebrow}
