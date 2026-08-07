@@ -1,5 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Jersey 10";
+    src: url("./assets/fonts/Jersey10-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Jersey 25";
+    src: url("./assets/fonts/Jersey25-Regular.ttf") format("truetype");
+}
+@theme {
+    --font-heading: "Jersey 25", sans-serif;
+    --font-bold: "Jersey 10", sans-serif;
+}
+
 body {
     @apply bg-[#191923] text-white;
-    margin: -1px; 
 }

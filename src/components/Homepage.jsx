@@ -16,7 +16,7 @@ const dishes = [
               badgeColor:'yellow',
               title: 'K-Pop Crunch Bao',
               description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '€8,50', tags:['vegan', 'spicy'],
+              price: '8,50', tags:['vegan', 'spicy'],
               imageUrl:'/images/korean-fried-cauliflower-bao.png'
             },
             {
@@ -24,7 +24,7 @@ const dishes = [
               badgeColor:'cyan',
               title: 'Tiger Ramen',
               description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '€8,50', tags:['vegan', 'spicy'],
+              price: '8,50', tags:['vegan', 'spicy'],
               imageUrl:'/images/spicy-corn-ramen-bowl.png'
             },
               {
@@ -32,7 +32,7 @@ const dishes = [
               badgeColor:'green',
               title: 'Seoul Glow Bowl',
               description:'Crispy, Kimchi. sesame and neon mayo',
-              price: '€8,50', tags:['vegan', 'spicy'],
+              price: '8,50', tags:['vegan', 'spicy'],
               imageUrl:'/images/korean-tofu-rice-bowl.png'
             },
           ];
@@ -62,7 +62,7 @@ const feedImages = [
 
 export default function HomePage() {  
   return (  
-    <div className="min-h-screen bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
+    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-10 lg:max-w-full">
         <RestaurantName/>
         <Navigation items={[
@@ -80,7 +80,7 @@ export default function HomePage() {
         title="It's not just dinner. It's content."
           leftContent={
               <div className="mt-6">
-                <p className="text-xl text-zinc-500">
+                <p className="text-xl text-zinc-500 font-bold">
                   FEED THE FEED combines bold Asian street food, changing creator collaborations and immersive photo spots. Every dish is designed to taste good before and after the camera comes out.
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
               },
               {
                 icon: '/images/neon-sushi-bowl-illustration.png',
-                label: 'Changing Creator Collaborations',
+                label: 'Creator Collaborations',
                 caption:
                   'We collaborate with different creators to bring you new and exciting dishes that are designed to be shared and enjoyed.',
               },

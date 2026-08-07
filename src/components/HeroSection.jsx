@@ -22,9 +22,9 @@ export default function HeroSection({
                 <Button href="#book" variant="primary">
                     Book a Table
                 </Button> 
-                <a href="#" className="rounded-lg border border-pink-500 px-6 py-3 text-sm font-semibold text-pink-500 transition-colors hover:bg-pink-500 hover:text-white">
+                <Button href="#Menu" variant="primaryLight">
                     Explore the Menu
-                </a>
+                </Button>
             </div>
             <p className="mt-7 text-xs font-semibold text-zinc-500">#feedthefeed - #feedthefeed.cgn</p>
             </div>
