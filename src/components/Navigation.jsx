@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavigationLink from './NavigationLink';
 
-export default function Navigation({ items  }) {
+export default function Navigation({ children, items  }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -14,7 +14,7 @@ export default function Navigation({ items  }) {
                 aria-label="Navigation öffnen"
                 onClick={() => setIsOpen((open) => !open)}
             >
-                Menü
+                { children }
             </button>
 
             <div className="hidden items-center gap-7 md:flex">
