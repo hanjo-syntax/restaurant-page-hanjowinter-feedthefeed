@@ -19,7 +19,11 @@ export default function Navigation({ items  }) {
 
             <div className="hidden items-center gap-7 md:flex">
                 {items.map((item) => (
-                    <NavigationLink key={item.href} href={item.href} linkText={item.linkText} />
+                    <NavigationLink
+                        key={item.href}
+                        href={item.href}
+                        label={item.label}
+                    />
                 ))}
             </div>
 
@@ -27,11 +31,10 @@ export default function Navigation({ items  }) {
                 <div id="mobile-navigation" className="absolute right-0 top-full z-10 mt-3 flex min-w-40 flex-col gap-4 rounded bg-zinc-900 p-5 shadow-lg md:hidden">
                     {items.map((item) => (
                         <NavigationLink
-                            key={item.href}
-                            href={item.href}
-                            linkText={item.linkText}
-                            onClick={() => setIsOpen(false)}
-                        />
+                        key={item.href}
+                        href={item.href}
+                        label={item.label}
+                    />
                     ))}
                 </div>
             )}

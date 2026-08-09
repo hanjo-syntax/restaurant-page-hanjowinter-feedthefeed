@@ -11,7 +11,14 @@ import ImageRow from './ImageRow';
 import Footer from './Footer';
 import Button from './Button';
 
-iconRowItems = [
+import {
+  navItems,
+  navigationLinks,
+  socialLinks,
+} from '../data/navigation';
+
+// Items für die IconRow in der Konzept Section
+const iconRowItems = [
               {
                 icon: '/images/neon-noodle-bowl-illustration.png',
                 label: 'Kräftiges asiatisches Streetfood',
@@ -32,6 +39,7 @@ iconRowItems = [
               },
 ];
 
+// Daten der Gerichte in der Trend Section
 const dishes = [
             {
               badgeKind: 'Im Trend',
@@ -59,6 +67,7 @@ const dishes = [
             },
 ];
 
+// Bilder für die Feed Section
 const feedImages = [
           {
             src: '/images/pink-coconut-ramen-tofu-bowl.png',
@@ -80,28 +89,6 @@ const feedImages = [
             src: '/images/neon-restaurant-table-pink-cocktail.png',
             alt: 'Restauranttisch mit Neonbeleuchtung',
           },
-];
-
-const navItems= [
-          { href: '#home', linkText: 'Startseite' },
-          { href: '#menu', linkText: 'Speisekarte' },
-          { href: '#feed', linkText: 'Der Feed' },
-          { href: '#drops', linkText: 'Aktionen' },
-          { href: '#visit', linkText: 'Besuch' }
-];
-
-const navigationLinks = [
-    { href: '#home', text: 'Startseite' },
-    { href: '#menu', text: 'Speisekarte' },
-    { href: '#feed', text: 'Der Feed' },
-    { href: '#drops', text: 'Aktionen' },
-    { href: '#visit', text: 'Besuch' },
-];
-
-const socialLinks = [
-    { href: '#instagram', text: 'Instagram' },
-    { href: '#tiktok', text: 'TikTok' },
-    { href: '#youtube', text: 'YouTube' },
 ];
 
 export default function HomePage() {  
