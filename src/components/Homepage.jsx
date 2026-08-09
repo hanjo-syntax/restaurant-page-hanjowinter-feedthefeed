@@ -10,6 +10,28 @@ import DishCardRow from './DishCardRow';
 import ImageRow from './ImageRow';
 import Footer from './Footer';
 import Button from './Button';
+
+iconRowItems = [
+              {
+                icon: '/images/neon-noodle-bowl-illustration.png',
+                label: 'Kräftiges asiatisches Streetfood',
+                caption:
+                  'Unsere Speisekarte ist von den kräftigen Aromen asiatischen Streetfoods inspiriert – mit frischen Zutaten und einzigartigen Geschmackskombinationen.',
+              },
+              {
+                icon: '/images/neon-sushi-bowl-illustration.png',
+                label: 'Creator-Kooperationen',
+                caption:
+                  'Wir arbeiten mit verschiedenen Creators zusammen und bringen dir neue, aufregende Gerichte zum Teilen und Genießen.',
+              },
+              {
+                icon: '/images/neon-camera-illustration.png',
+                label: 'Immersive Fotospots',
+                caption:
+                  'Unser Restaurant ist ein visuelles Erlebnis – mit immersiven Fotospots, die deine kulinarischen Momente perfekt festhalten.',
+              },
+];
+
 const dishes = [
             {
               badgeKind: 'Im Trend',
@@ -35,7 +57,7 @@ const dishes = [
               price: '8,50', tags:['vegan', 'scharf'],
               imageUrl:'/images/korean-tofu-rice-bowl.png'
             },
-          ];
+];
 
 const feedImages = [
           {
@@ -66,7 +88,21 @@ const navItems= [
           { href: '#feed', linkText: 'Der Feed' },
           { href: '#drops', linkText: 'Aktionen' },
           { href: '#visit', linkText: 'Besuch' }
-        ];
+];
+
+const navigationLinks = [
+    { href: '#home', text: 'Startseite' },
+    { href: '#menu', text: 'Speisekarte' },
+    { href: '#feed', text: 'Der Feed' },
+    { href: '#drops', text: 'Aktionen' },
+    { href: '#visit', text: 'Besuch' },
+];
+
+const socialLinks = [
+    { href: '#instagram', text: 'Instagram' },
+    { href: '#tiktok', text: 'TikTok' },
+    { href: '#youtube', text: 'YouTube' },
+];
 
 export default function HomePage() {  
   return (  
@@ -89,26 +125,7 @@ export default function HomePage() {
           }
         >
           <IconFeatureRow
-            items={[
-              {
-                icon: '/images/neon-noodle-bowl-illustration.png',
-                label: 'Kräftiges asiatisches Streetfood',
-                caption:
-                  'Unsere Speisekarte ist von den kräftigen Aromen asiatischen Streetfoods inspiriert – mit frischen Zutaten und einzigartigen Geschmackskombinationen.',
-              },
-              {
-                icon: '/images/neon-sushi-bowl-illustration.png',
-                label: 'Creator-Kooperationen',
-                caption:
-                  'Wir arbeiten mit verschiedenen Creators zusammen und bringen dir neue, aufregende Gerichte zum Teilen und Genießen.',
-              },
-              {
-                icon: '/images/neon-camera-illustration.png',
-                label: 'Immersive Fotospots',
-                caption:
-                  'Unser Restaurant ist ein visuelles Erlebnis – mit immersiven Fotospots, die deine kulinarischen Momente perfekt festhalten.',
-              },
-            ]}
+            items={iconRowItems}
           />
         </SplitSection>
         <Section bg="none" 
@@ -179,7 +196,10 @@ export default function HomePage() {
           />
 
         </SplitSection>
-        <Footer />
+        <Footer 
+            navigationLinks={navigationLinks}
+            socialLinks={socialLinks}
+        />
       </main>
     </div>
   );  

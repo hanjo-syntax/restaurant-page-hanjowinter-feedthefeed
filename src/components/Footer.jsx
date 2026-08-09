@@ -2,21 +2,10 @@ import FooterBrand from "./FooterBrand";
 import FooterColum from "./FooterColumn";
 import SubscribeForm from "./SubscribeForm";
 
-const navigationLinks = [
-    { href: '#home', text: 'Startseite' },
-    { href: '#menu', text: 'Speisekarte' },
-    { href: '#feed', text: 'Der Feed' },
-    { href: '#drops', text: 'Aktionen' },
-    { href: '#visit', text: 'Besuch' },
-]
-
-const socialLinks = [
-    { href: '#instagram', text: 'Instagram' },
-    { href: '#tiktok', text: 'TikTok' },
-    { href: '#youtube', text: 'YouTube' },
-]
-
-export default function Footer() {
+export default function Footer({
+  navigationLinks = [],
+  socialLinks = [],
+}) {
     return (
         <footer className="mt-8 bg-zinc-900">
             <div className="mx-auto flex max-w-6xl flex-col justify-between gap-10 px-6 py-14 sm:flex-row sm:flex-wrap lg:flex-nowrap lg:px-10">
