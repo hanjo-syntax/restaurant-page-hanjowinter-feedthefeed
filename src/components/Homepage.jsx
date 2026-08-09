@@ -127,7 +127,7 @@ export default function HomePage() {
           reverse='true'
           leftContent={
             <div className="mt-6">
-              <h3 className="text-xl font-black text-pink-400">
+              <h3 className="text-xl font-blac bg-linear-to-b from-pink-500 to-fuchsia-400 bg-clip-text text-transparent">
                 Pinkes Miso-Ramen
               </h3>
               <p className='text-zinc-500 py-3'>
