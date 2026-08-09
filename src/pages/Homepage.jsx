@@ -1,15 +1,15 @@
-import HeroSection from './HeroSection';
-import HeroImage from './HeroImage';
-import RestaurantName from './RestaurantName';
-import OpeningHours from './OpeningHours';
-import Navigation from './Navigation';  
-import Section from './Section';
-import SplitSection from './SplitSection';
-import IconFeatureRow from './IconFeatureRow';
-import DishCardRow from './DishCardRow';
-import ImageRow from './ImageRow';
-import Footer from './Footer';
-import Button from './Button';
+import HeroSection from '../components/HeroSection';
+import HeroImage from '../components/HeroImage';
+import RestaurantName from '../components/RestaurantName';
+import OpeningHours from '../components/OpeningHours';
+import Navigation from '../components/Navigation';
+import Section from '../components/Section';
+import SplitSection from '../components/SplitSection';
+import IconFeatureRow from '../components/IconFeatureRow';
+import DishCardRow from '../components/DishCardRow';
+import ImageRow from '../components/ImageRow';
+import Footer from '../components/Footer';
+import Button from '../components/Button';
 
 import {
   navItems,
