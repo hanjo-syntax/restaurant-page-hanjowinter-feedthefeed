@@ -95,10 +95,13 @@ export default function HomePage() {
   return (  
     <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-10 lg:max-w-full">
-        <RestaurantName/>
+        <RestaurantName />
         <Navigation items={navItems} >
-         Menü
+            Menü
          </Navigation>
+        <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
+          Tisch reservieren
+        </Button>
       </header>
       <main className="py-6">
         <HeroSection/>

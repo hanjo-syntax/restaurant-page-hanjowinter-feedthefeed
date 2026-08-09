@@ -1,19 +1,17 @@
 import { useMemo, useState } from 'react';
-import Button from './Button';
-import CategoryTabs from './CategoryTabs';
-import DishCard from './DishCard';
-import Footer from './Footer';
-import Navigation from './Navigation';
-import RestaurantName from './RestaurantName';
-import Section from './Section';
+import Button from '../components/Button';
+import CategoryTabs from '../components/CategoryTabs';
+import DishCard from '../components/DishCard';
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
+import RestaurantName from '../components/RestaurantName';
+import Section from '../components/Section';
 
-const navItems = [
-  { href: '#home', linkText: 'Startseite' },
-  { href: '#menu', linkText: 'Speisekarte' },
-  { href: '#feed', linkText: 'Der Feed' },
-  { href: '#drops', linkText: 'Aktionen' },
-  { href: '#visit', linkText: 'Besuch' },
-];
+import {
+  navItems,
+  navigationLinks,
+  socialLinks,
+} from '../data/navigation';
 
 const menuItems = [
   {
@@ -110,8 +108,10 @@ export default function MenuPage() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-pink-500 selection:text-white">
       <header className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-8 lg:px-10">
         <RestaurantName />
-        <Navigation items={navItems} />
-        <Button href="#book" variant="secondary" className="hidden shrink-0 md:inline-flex">
+        <Navigation items={navItems} >
+            Menü
+         </Navigation>
+        <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
           Tisch reservieren
         </Button>
       </header>
@@ -169,16 +169,27 @@ export default function MenuPage() {
           className="my-0 px-6 py-10 sm:px-10 lg:px-16"
           contentClassName="mt-0 w-full"
         >
-          <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-5 text-center sm:flex-row sm:text-left">
-            <img src="/images/info-icon.png" alt="" aria-hidden="true" className="h-12 w-12 object-contain" />
-            <div className="flex-1 text-zinc-400">
-              <h3 className="text-2xl font-black uppercase text-white">
+        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-5 text-center sm:flex-row">
+          <img
+            src="/images/info-icon.png"
+            alt=""
+            aria-hidden="true"
+            className="h-12 w-12 object-contain"
+          />
+
+            <div className="text-zinc-400">
+              <h3 className="text-2xl font-bold uppercase text-white">
                 Allergeninformationen
               </h3>
+
               <p className="mt-2 text-lg font-bold">
                 Bitte informiere unser Team über Allergien oder Unverträglichkeiten.
               </p>
-              <a href="#allergens" className="mt-2 inline-block text-lg text-cyan-400 underline underline-offset-4">
+
+              <a
+                href="#allergens"
+                className="mt-2 inline-block text-lg font-bold text-cyan-400 underline underline-offset-4"
+              >
                 Alle Allergene ansehen
               </a>
             </div>
@@ -209,7 +220,10 @@ export default function MenuPage() {
         </Section>
       </main>
 
-      <Footer />
+              <Footer 
+                  navigationLinks={navigationLinks}
+                  socialLinks={socialLinks}
+              />
     </div>
   );
 }
