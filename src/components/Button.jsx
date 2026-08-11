@@ -7,6 +7,7 @@ const variants = {
 export default function Button({
   children,
   href,
+  type = 'button',
   variant = 'primary',
   className = '',
 }) {
@@ -23,7 +24,7 @@ export default function Button({
   }
 
   return (
-    <button type="button" className={styles}>
+    <button type={type} className={styles}>
       {children}
     </button>
   );

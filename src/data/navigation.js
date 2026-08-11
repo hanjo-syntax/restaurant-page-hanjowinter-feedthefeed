@@ -2,6 +2,7 @@ export const navigationLinks = [
   { to: '/', label: 'Startseite' },
   { to: '/menu', label: 'Speisekarte' },
   { to: '/feed', label: 'Der Feed' },
+  { to: '/contact', label: 'Kontakt' },
   { to: '/drops', label: 'Aktionen' },
   { to: '/visit', label: 'Besuch' },
 ];
