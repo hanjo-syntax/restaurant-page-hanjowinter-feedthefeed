@@ -1,8 +1,9 @@
-export default function NavigationLink({ href, label }) {
+import { Link } from "react-router";
+export default function NavigationLink({ to, label }) {
     
     return (
-        <a href={ href } className="text-xl font-bold text-zinc-300 pb-2 hover:text-yellow-300 hover:border-b hover:border-yellow-300 hover:pb-2">
+        <Link to={to} className="text-xl font-bold text-zinc-300 pb-2 hover:text-yellow-300 hover:border-b hover:border-yellow-300 hover:pb-2">
             { label }
-        </a>
+        </Link>
     );
 }   

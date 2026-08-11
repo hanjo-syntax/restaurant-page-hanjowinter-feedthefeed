@@ -1,15 +1,15 @@
 export const navigationLinks = [
-  { href: '#home', label: 'Startseite' },
-  { href: '#menu', label: 'Speisekarte' },
-  { href: '#feed', label: 'Der Feed' },
-  { href: '#drops', label: 'Aktionen' },
-  { href: '#visit', label: 'Besuch' },
+  { to: '/', label: 'Startseite' },
+  { to: '/menu', label: 'Speisekarte' },
+  { to: '/#feed', label: 'Der Feed' },
+  { to: '/#drops', label: 'Aktionen' },
+  { to: '/#visit', label: 'Besuch' },
 ];
 
 export const navItems = navigationLinks;
 
 export const socialLinks = [
-  { href: '#instagram', label: 'Instagram' },
-  { href: '#tiktok', label: 'TikTok' },
-  { href: '#youtube', label: 'YouTube' },
+  { to: 'instagram', label: 'Instagram' },
+  { to: 'tiktok', label: 'TikTok' },
+  { to: '#youtube', label: 'YouTube' },
 ];
