@@ -175,7 +175,11 @@ export default function HomePage() {
               <p className='text-zinc-400 py-3 font-bold text-xl'>
                 FEED THE FEED<br/>
                 Venloer Straße 214<br/>
-                50823 Köln, Deutschland  
+                50823 Köln, Deutschland<br/><br/>
+                <i>
+                Fünf Minuten vom Bahnhof Ehrenfeld.<br />
+                Linien 3, 4 und 13 halten ganz in der Nähe.
+                </i>  
               </p>
               <OpeningHours/>
             </div>

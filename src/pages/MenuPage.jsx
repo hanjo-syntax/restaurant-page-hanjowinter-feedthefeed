@@ -198,24 +198,17 @@ export default function MenuPage() {
 
         <Section
           id="book"
-          bg="bg-zinc-900"
+          bg="bg-cyan-400 text-zinc-950"
           hideHeader
           className="mx-2 my-4 px-6 py-14 sm:px-10 lg:px-16"
           contentClassName="mt-0 w-full"
         >
-          <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center sm:flex-row sm:text-left">
-            <img src="/images/calendar-icon.png" alt="" aria-hidden="true" className="h-14 w-14 object-contain" />
-            <div className="flex-1">
-              <h2 className="text-4xl font-bold uppercase leading-tight sm:text-5xl">
-                Bereit, den Feed zu füttern?
-              </h2>
-              <p className="mt-3 font-bold text-zinc-400">
-                Reserviere deinen Tisch und erlebe FEED THE FEED.
-              </p>
+          <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 text-center sm:flex-row sm:text-left">
+            <div>
+              <p className="font-bold uppercase tracking-[0.18em] text-zinc-800">See you at The Feed</p>
+              <h2 className="mt-2 text-4xl font-bold uppercase leading-tight sm:text-6xl">Bereit für deinen nächsten Besuch?</h2>
             </div>
-            <Button href="#reservation" variant="primary" className="shrink-0">
-              Tisch reservieren
-            </Button>
+            <Button href="#reservation" variant="primary" className="shrink-0">Tisch reservieren</Button>
           </div>
         </Section>
       </main>
