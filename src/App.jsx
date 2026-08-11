@@ -11,6 +11,7 @@ export default function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/feed" element={<FeedPage />} />
+        <Route path="/*" element={<Homepage />} />
       </Routes>
     </BrowserRouter>
   );

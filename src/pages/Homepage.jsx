@@ -1,8 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import HeroImage from '../components/HeroImage';
-import RestaurantName from '../components/RestaurantName';
 import OpeningHours from '../components/OpeningHours';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
 import IconFeatureRow from '../components/IconFeatureRow';
@@ -12,7 +11,6 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 
 import {
-  navItems,
   navigationLinks,
   socialLinks,
 } from '../data/navigation';
@@ -94,15 +92,7 @@ const feedImages = [
 export default function HomePage() {  
   return (  
     <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-10 lg:max-w-full">
-        <RestaurantName />
-        <Navigation items={navItems} >
-            Menü
-         </Navigation>
-        <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
-          Tisch reservieren
-        </Button>
-      </header>
+      <Header />
       <main className="py-6">
         <HeroSection/>
 

@@ -1,15 +1,14 @@
 import Button from '../components/Button';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import IconFeatureRow from '../components/IconFeatureRow';
 import ImageRow from '../components/ImageRow';
-import Navigation from '../components/Navigation';
 import OpeningHours from '../components/OpeningHours';
-import RestaurantName from '../components/RestaurantName';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
 
-import { navItems, navigationLinks, socialLinks } from '../data/navigation';
+import { navigationLinks, socialLinks } from '../data/navigation';
 
 const locationFeatures = [
   {
@@ -57,14 +56,8 @@ const atmosphereImages = [
 
 export default function FeedPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <header className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-8 lg:px-10">
-        <RestaurantName />
-        <Navigation items={navItems}>Menü</Navigation>
-        <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
-          Tisch reservieren
-        </Button>
-      </header>
+    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
+      <Header />
 
       <main>
         <section className="bg-zinc-900 px-6 py-16 sm:px-10 md:py-24 lg:px-16">

@@ -3,15 +3,10 @@ import Button from '../components/Button';
 import CategoryTabs from '../components/CategoryTabs';
 import DishCard from '../components/DishCard';
 import Footer from '../components/Footer';
-import Navigation from '../components/Navigation';
-import RestaurantName from '../components/RestaurantName';
+import Header from '../components/Header';
 import Section from '../components/Section';
 
-import {
-  navItems,
-  navigationLinks,
-  socialLinks,
-} from '../data/navigation';
+import { navigationLinks, socialLinks } from '../data/navigation';
 
 const menuItems = [
   {
@@ -105,16 +100,8 @@ export default function MenuPage() {
   );
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <header className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-8 lg:px-10">
-        <RestaurantName />
-        <Navigation items={navItems} >
-            Menü
-         </Navigation>
-        <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
-          Tisch reservieren
-        </Button>
-      </header>
+    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
+      <Header />
 
       <main id="menu">
         <section className="bg-zinc-900 px-6 py-16 sm:px-10 lg:px-16">
