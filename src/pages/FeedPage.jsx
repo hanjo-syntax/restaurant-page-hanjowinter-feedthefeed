@@ -1,6 +1,4 @@
 import Button from '../components/Button';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import IconFeatureRow from '../components/IconFeatureRow';
 import ImageRow from '../components/ImageRow';
@@ -56,10 +54,7 @@ const atmosphereImages = [
 
 export default function FeedPage() {
   return (
-    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <Header />
-
-      <main>
+    <>
         <section className="bg-zinc-900 px-6 py-16 sm:px-10 md:py-24 lg:px-16">
           <div className="mx-auto grid max-w-6xl items-end gap-10 md:grid-cols-[1.05fr_0.95fr]">
             <div>
@@ -160,9 +155,6 @@ export default function FeedPage() {
             <Button href="#reservation" variant="primary" className="shrink-0">Tisch reservieren</Button>
           </div>
         </Section>
-      </main>
-
-      <Footer navigationLinks={navigationLinks} socialLinks={socialLinks} />
-    </div>
+      </>
   );
 }

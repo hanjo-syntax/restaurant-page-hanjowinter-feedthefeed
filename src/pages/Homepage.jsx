@@ -91,9 +91,7 @@ const feedImages = [
 
 export default function HomePage() {  
   return (  
-    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <Header />
-      <main className="py-6">
+    <>
         <HeroSection/>
 
         <SplitSection bg="bg-zinc-900" eyebrow="Das Konzept" 
@@ -182,11 +180,6 @@ export default function HomePage() {
           />
 
         </SplitSection>
-        <Footer 
-            navigationLinks={navigationLinks}
-            socialLinks={socialLinks}
-        />
-      </main>
-    </div>
+      </>
   );  
 }

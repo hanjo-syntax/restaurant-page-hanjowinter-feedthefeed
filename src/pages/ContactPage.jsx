@@ -27,10 +27,7 @@ const visitFeatures = [
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <Header />
-
-      <main>
+      <>
         <section className="bg-zinc-900 px-6 py-16 sm:px-10 md:py-24 lg:px-16">
           <div className="mx-auto grid max-w-6xl items-end gap-10 md:grid-cols-[1.05fr_0.95fr]">
             <div>
@@ -78,9 +75,6 @@ export default function ContactPage() {
           </form>
         </section>
 
-      </main>
-
-      <Footer navigationLinks={navigationLinks} socialLinks={socialLinks} />
-    </div>
+      </>
   );
 }

@@ -100,10 +100,7 @@ export default function MenuPage() {
   );
 
   return (
-    <div className="min-h-screen min-w-full bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-500 selection:text-white">
-      <Header />
-
-      <main id="menu">
+      <>
         <section className="bg-zinc-900 px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-6xl">
             <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan-400">
@@ -198,12 +195,6 @@ export default function MenuPage() {
             <Button href="#reservation" variant="primary" className="shrink-0">Tisch reservieren</Button>
           </div>
         </Section>
-      </main>
-
-              <Footer 
-                  navigationLinks={navigationLinks}
-                  socialLinks={socialLinks}
-              />
-    </div>
+      </>
   );
 }
