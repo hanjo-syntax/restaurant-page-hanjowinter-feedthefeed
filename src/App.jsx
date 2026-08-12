@@ -6,6 +6,8 @@ import MenuPage from './pages/MenuPage';
 import FeedPage from './pages/FeedPage';
 import Error404Page from './pages/Error404Page';
 import ContactPage from './pages/ContactPage';
+import DropsPage from './pages/DropsPage';
+import VisitPage from './pages/VisitPage';
 
 export default function App() {
   return (
@@ -26,6 +28,14 @@ export default function App() {
         <Route
           path="/contact"
           element={<Page header footer Content={ContactPage} />}
+        />
+        <Route
+          path="/drops"
+          element={<Page header footer Content={DropsPage} />}
+        />
+        <Route
+          path="/visit"
+          element={<Page header footer Content={VisitPage} />}
         />
         <Route
           path="*"
