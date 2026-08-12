@@ -136,6 +136,10 @@ Der aktuelle Projektstand umfasst:
 - wiederverwendbare UI-Komponenten in Figma vorbereitet
 - erste Screenshots zum Repository hinzugefügt
 
+## Komponenten-Dokumentation
+
+Eine Referenz aller wiederverwendbaren React-Komponenten, ihrer Props, Datenstrukturen und typischen Verwendung findest du in [`docs/COMPONENTS.md`](docs/COMPONENTS.md).
+
 ## Figma
 
 Das vollständige Designsystem, die Wireframes und Mockups befinden sich im Figma-Projekt.

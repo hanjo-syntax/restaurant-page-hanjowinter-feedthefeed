@@ -1,8 +1,9 @@
 import Button from '../components/Button';
-
+import Section from '../components/Section';
 export default function Error404Page() {
   return (
-    <section className="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-6 text-center">
+    <Section className="mx-auto max-w-6xl px-6 py-6 sm:px-10" contentClassName="mt-10">
+      
       <p className="font-bold uppercase tracking-[0.2em] text-cyan-400">
         404 · Nicht gefunden
       </p>
@@ -18,6 +19,7 @@ export default function Error404Page() {
       <Button href="/" variant="primary" className="mt-8">
         Zur Startseite
       </Button>
-    </section>
+
+    </Section>
   );
 }
