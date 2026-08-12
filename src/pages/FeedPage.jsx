@@ -6,8 +6,6 @@ import OpeningHours from '../components/OpeningHours';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
 
-import { navigationLinks, socialLinks } from '../data/navigation';
-
 const locationFeatures = [
   {
     icon: '/images/steaming-noodle-bowl-icon.png',

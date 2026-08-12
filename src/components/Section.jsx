@@ -9,7 +9,7 @@ export default function Section({
     contentClassName = 'mt-10',
 }) {
     return (
-        <section id={id} className={`${bg} flex flex-col ${className}`}>
+        <section id={id} className={`${bg} ${className}`}>
             {!hideHeader && (
                 <>
                     <p className="uppercase font-bold bg-linear-to-b from-cyan-400 to-cyan-200 bg-clip-text text-transparent">

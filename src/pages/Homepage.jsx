@@ -1,19 +1,12 @@
 import HeroSection from '../components/HeroSection';
 import HeroImage from '../components/HeroImage';
 import OpeningHours from '../components/OpeningHours';
-import Header from '../components/Header';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
 import IconFeatureRow from '../components/IconFeatureRow';
 import DishCardRow from '../components/DishCardRow';
 import ImageRow from '../components/ImageRow';
-import Footer from '../components/Footer';
 import Button from '../components/Button';
-
-import {
-  navigationLinks,
-  socialLinks,
-} from '../data/navigation';
 
 // Items für die IconRow in der Konzept Section
 const iconRowItems = [

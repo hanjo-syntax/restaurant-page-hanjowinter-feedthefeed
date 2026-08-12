@@ -1,5 +1,4 @@
 import Button from '../components/Button';
-import { navigationLinks, socialLinks } from '../data/navigation';
 
 export default function Error404Page() {
   return (

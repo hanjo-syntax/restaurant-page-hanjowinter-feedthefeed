@@ -2,11 +2,7 @@ import { useMemo, useState } from 'react';
 import Button from '../components/Button';
 import CategoryTabs from '../components/CategoryTabs';
 import DishCard from '../components/DishCard';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Section from '../components/Section';
-
-import { navigationLinks, socialLinks } from '../data/navigation';
 
 const menuItems = [
   {
