@@ -1,7 +1,11 @@
-export default function IconFeature({ icon, label, caption }) {
+export default function IconFeature({ icon, lucidIcon: LucidIcon, label, caption }) {
     return (
         <article className="flex flex-1 flex-col items-center">
-            <img src={icon} alt={label} className="w-30 h-30 object-contain" />
+            {LucidIcon ? (
+                <LucidIcon aria-label={label} className="w-30 h-30" />
+            ) : (
+                <img src={icon} alt={label} className="w-30 h-30 object-contain" />
+            )}
             <h3 className="mt-5 text-2xl md:text-xl font-bold uppercase text-white">
                 {label}
             </h3>

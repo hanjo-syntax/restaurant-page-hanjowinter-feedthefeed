@@ -7,6 +7,7 @@ export default function IconFeatureRow({ items }) {
         <IconFeature
           key={item.label}
           icon={item.icon}
+          lucidIcon={item.lucidIcon}
           label={item.label}
           caption={item.caption}
         />

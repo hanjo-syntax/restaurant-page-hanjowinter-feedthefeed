@@ -240,7 +240,18 @@ Jedes Bild benötigt `src` und `alt`. Für dekorative Bilder kann `alt` leer sei
 }]} />
 ```
 
-Ein Item benötigt `icon`, `label` und `caption`. Der Schlüssel wird aus `label` gebildet.
+Ein Item benötigt `label` und `caption`; für das Icon kann entweder `icon` (Bildpfad)
+oder `lucidIcon` (Lucide-Komponente) verwendet werden. Der Schlüssel wird aus `label` gebildet.
+
+```jsx
+import { Camera } from 'lucide-react';
+
+<IconFeatureRow items={[{
+  lucidIcon: Camera,
+  label: 'Fotospots',
+  caption: 'Dein Abend, perfekt für den Feed.',
+}]} />
+```
 
 ### `OpeningHours`
 
