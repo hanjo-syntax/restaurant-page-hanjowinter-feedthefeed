@@ -14,3 +14,9 @@ export const socialLinks = [
   { to: 'tiktok', label: 'TikTok' },
   { to: 'youtube', label: 'YouTube' },
 ];
+
+export const legalLinks = [
+  { to: '/impressum', label: 'Impressum' },
+  { to: '/datenschutz', label: 'Datenschutz' },
+  { to: '/allergene', label: 'Allergene' },
+];

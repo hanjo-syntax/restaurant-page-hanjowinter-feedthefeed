@@ -8,6 +8,9 @@ import Error404Page from './pages/Error404Page';
 import ContactPage from './pages/ContactPage';
 import DropsPage from './pages/DropsPage';
 import VisitPage from './pages/VisitPage';
+import ImpressumPage from './pages/ImpressumPage';
+import DatenschutzPage from './pages/DatenschutzPage';
+import AllergenePage from './pages/AllergenePage';
 
 export default function App() {
   return (
@@ -36,6 +39,18 @@ export default function App() {
         <Route
           path="/visit"
           element={<Page header footer Content={VisitPage} />}
+        />
+        <Route
+          path="/impressum"
+          element={<Page header footer Content={ImpressumPage} />}
+        />
+        <Route
+          path="/datenschutz"
+          element={<Page header footer Content={DatenschutzPage} />}
+        />
+        <Route
+          path="/allergene"
+          element={<Page header footer Content={AllergenePage} />}
         />
         <Route
           path="*"

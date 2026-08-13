@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import { navigationLinks, socialLinks } from '../data/navigation';
+import { navigationLinks, socialLinks, legalLinks } from '../data/navigation';
 export default function Page({ header = true, footer = true, Content }) {
   return (
     <div>
@@ -14,6 +14,7 @@ export default function Page({ header = true, footer = true, Content }) {
         <Footer
           navigationLinks={navigationLinks}
           socialLinks={socialLinks}
+          legalLinks={legalLinks}
         />
       )}
     </div>

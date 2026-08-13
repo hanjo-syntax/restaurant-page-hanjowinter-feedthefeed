@@ -5,6 +5,7 @@ import SubscribeForm from "./SubscribeForm";
 export default function Footer({
   navigationLinks = [],
   socialLinks = [],
+  legalLinks = [],
 }) {
     return (
         <footer className="mt-8 bg-zinc-900">
@@ -14,6 +15,7 @@ export default function Footer({
                     tagline="Asiatisches Streetfood. Zum Teilen gemacht. Für Trends gemacht." />
                 <FooterColum title="Navigation" links={ navigationLinks } />
                 <FooterColum title="Social" links={ socialLinks } />
+                <FooterColum title="Rechtliches" links={ legalLinks } />
             
 
                 <div className="sm:min-w-56">
@@ -29,7 +31,7 @@ export default function Footer({
             </div>
             <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-zinc-800 p-6 font-bold text-zinc-500 lg:px-10">
                 <span>(C) 2026 FEED THE FEED</span>
-                <span>IMPRESSUM – DATENSCHUTZ – ALLERGENE</span>
+                <span>Zum Teilen gemacht. Für Trends gemacht.</span>
             </div>
         </footer>
     )
