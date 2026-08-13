@@ -9,10 +9,29 @@
     font-family: "Jersey 25";
     src: url("./assets/fonts/Jersey25-Regular.ttf") format("truetype");
 }
+
 @theme {
     --font-heading: "Jersey 25", sans-serif;
     --font-bold: "Jersey 10", sans-serif;
+    --animate-neon-pulse: neon-pulse 1s infinite alternate;
 
+    @keyframes neon-pulse {
+        0%, 100% {
+            filter: drop-shadow(0 0 6px var(--color-pink-500));
+        }
+
+        25% {
+            filter: drop-shadow(0 0 6px var(--color-pink-500));
+        }
+
+        50% {
+            filter: drop-shadow(0 0 6px var(--color-pink-400));
+        }
+
+        75% {
+            filter: drop-shadow(0 0 6px var(--color-pink-400));
+        }
+    }
 }
 
 body {

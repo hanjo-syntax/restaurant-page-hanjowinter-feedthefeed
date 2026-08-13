@@ -5,20 +5,21 @@ import ImageRow from '../components/ImageRow';
 import OpeningHours from '../components/OpeningHours';
 import Section from '../components/Section';
 import SplitSection from '../components/SplitSection';
+import { Camera, CupSoda, Soup } from 'lucide-react';
 
 const locationFeatures = [
   {
-    icon: '/images/steaming-noodle-bowl-icon.png',
+    lucidIcon: Soup,
     label: 'Streetfood in Ehrenfeld',
     caption: 'Kräftige Aromen, heiße Bowls und Bao zum Teilen – mitten in Köln.',
   },
   {
-    icon: '/images/neon-camera-illustration.png',
+    lucidIcon: Camera,
     label: 'Dein nächster Fotospot',
     caption: 'Neon, Farbe und Details, die deinen Besuch genauso gut aussehen lassen wie er schmeckt.',
   },
   {
-    icon: '/images/takeaway-drink-icon.png',
+    lucidIcon: CupSoda,
     label: 'Für jede Runde',
     caption: 'Ob schneller Lunch, Date Night oder großer Creator-Abend: am Tisch ist Platz für alle.',
   },
@@ -71,6 +72,7 @@ export default function FeedPage() {
             <HeroImage
               src="/images/neon-restaurant-table-pink-cocktail.png"
               alt="Neonbeleuchteter Tisch im Feed the Feed"
+              animate
             />
           </div>
         </section>

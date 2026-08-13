@@ -19,7 +19,7 @@ export default function HeroSection({
                     description={WelcomeTextDescription}
                 />
             <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Button href="#book" variant="primary">
+                <Button href="#book" variant="primary" className='animate-pulse'>
                     Tisch reservieren
                 </Button> 
                 <Button href="#Menu" variant="primaryLight">
@@ -29,7 +29,7 @@ export default function HeroSection({
             <p className="mt-7 text-xs font-semibold text-zinc-500">#feedthefeed - #feedthefeed.cgn</p>
             </div>
             <div className="w-full ">
-                <HeroImage src={heroImageSrc} alt={heroImageAlt} badge={heroImageBadge} />
+                <HeroImage src={heroImageSrc} alt={heroImageAlt} badge={heroImageBadge} animate/>
             </div>
         </section>
     );

@@ -133,6 +133,7 @@ export default function HomePage() {
             src='/images/pink-coconut-ramen-tofu-bowl.png'
             alt='Pinkes Miso-Ramen'
             badge='Auf 500 Schalen limitiert'
+            animate
           />
 
         </SplitSection>

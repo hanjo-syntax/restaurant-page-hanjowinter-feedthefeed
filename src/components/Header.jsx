@@ -8,7 +8,7 @@ export default function Header() {
     <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:max-w-full lg:px-10">
       <RestaurantName />
       <Navigation items={navItems}>Menü</Navigation>
-      <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex">
+      <Button href="#book" variant="primary" className="hidden shrink-0 md:inline-flex md:animate-pulse">
         Tisch reservieren
       </Button>
     </header>
