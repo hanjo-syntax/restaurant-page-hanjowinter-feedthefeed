@@ -16,6 +16,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* 
+            Jede Route bekommt dieselbe Seitenhülle. Dadurch bleiben Header und Footer konsistent. 
+            Der Seiteninhalt wird als Komponente in die Page Komponente als Prop importiert.
+            Darum wird Content mit großem C geschrieben.
+        */}
         <Route
           path="/"
           element={<Page header footer Content={Homepage} />}
@@ -52,6 +57,7 @@ export default function App() {
           path="/allergene"
           element={<Page header footer Content={AllergenePage} />}
         />
+        {/* Fängt unbekannte URLs ab und zeigt eine eigene 404-Seite an. */}
         <Route
           path="*"
           element={<Page header footer Content={Error404Page} />}

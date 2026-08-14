@@ -13,6 +13,7 @@ export default function Footer({
                 <FooterBrand
                     name="Feed the Feed"
                     tagline="Asiatisches Streetfood. Zum Teilen gemacht. Für Trends gemacht." />
+                {/* FooterColumn rendert alle Linkgruppen gleich und vermeidet doppeltes Markup. */}
                 <FooterColum title="Navigation" links={ navigationLinks } />
                 <FooterColum title="Social" links={ socialLinks } />
                 <FooterColum title="Rechtliches" links={ legalLinks } />

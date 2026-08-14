@@ -9,6 +9,7 @@ export default function Section({
     contentClassName = 'mt-10',
 }) {
     return (
+        // Gemeinsame Section-Struktur für konsistente Abstände, Überschriften und Hintergründe.
         <section id={id} className={`${bg} ${className}`}>
             {!hideHeader && (
                 <>

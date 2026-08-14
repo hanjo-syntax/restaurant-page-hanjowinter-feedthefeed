@@ -38,6 +38,38 @@ const menuItems = [
     imageUrl: '/images/pink-coconut-ramen-tofu-bowl.png',
   },
   {
+    category: 'bao',
+    title: 'Neon Tofu Bao',
+    description: 'Knuspriger Tofu, Gurke, Frühlingszwiebel und Sesam.',
+    price: '8,90',
+    tags: ['vegan'],
+    imageUrl: '/images/neon-ramen-bowl-bao-buns.png',
+  },
+  {
+    category: 'bao',
+    title: 'Miso Mushroom Bao',
+    description: 'Gebratene Pilze, Miso-Glasur und cremige Chili-Mayo.',
+    price: '8,90',
+    tags: ['vegan'],
+    imageUrl: '/images/pink-coconut-ramen-tofu-bowl.png',
+  },
+  {
+    category: 'bao',
+    title: 'K-Pop Crunch Bao',
+    description: 'Knuspriger Blumenkohl, Kimchi, Sesam und Neon-Mayo.',
+    price: '8,50',
+    tags: ['vegan', 'scharf'],
+    imageUrl: '/images/korean-fried-cauliflower-bao.png',
+  },
+  {
+    category: 'bao',
+    title: 'Seoul BBQ Bao',
+    description: 'Zartes BBQ, knackiger Salat und würzige Gochujang-Sauce.',
+    price: '9,50',
+    tags: ['scharf'],
+    imageUrl: '/images/korean-fried-cauliflower-bao-pair.png',
+  },
+  {
     category: 'bowls',
     title: 'Seoul Glow Bowl',
     description: 'Tofu, Reis, knackiges Gemüse und Sesam-Dressing.',
@@ -88,12 +120,53 @@ const menuItems = [
 ];
 
 export default function MenuPage() {
-  const [activeCategory, setActiveCategory] = useState('bao');
+  // Der React-Hook useState speichert einen Wert, der sich während der Nutzung der Seite ändern kann
+  // Hier ist "bao" der Startwert für die aktive Kategorie
+  // useState gibt ein Array mit zwei Werten zurück: den aktuellen Zustand und eine Setter-Funktion
 
+  // Array-Destructuring verteilt diese Werte anhand ihrer Reihenfolge auf zwei Variablen:
+  // activeCategory liest den aktuellen Wert, setActiveCategory aktualisiert ihn
+
+  // Man nutzt diese Schreibweise weil beide Werte dadurch direkt benannt
+  // und ohne zusätzlichen Zugriff auf das Rückgabe-Array verwendet werden können
+  
+  // Die Setter-Funktion wird von React bereitgestellt und muss nicht selbst definiert werden
+  // Beim Klick auf einen Kategorie-Tab wird setActiveCategory aufgerufen; React rendert
+  // die Komponente danach neu und zeigt die zur ausgewählten Kategorie passenden Gerichte an
+  const [activeCategory, setActiveCategory] = useState('bao');
+ 
+  // currentPage merkt sich die aktuell angezeigte Menüseite. Die Zählung beginnt bei 0.
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 4;
+
+  // Der Hook useMemo speichert das Ergebnis der Filterung zwischen
+  // Die Liste wird nur neu berechnet, wenn sich activeCategory ändert
+  // Dadurch wird bei einem erneuten Rendern ohne Kategorienwechsel keine neue
+  // Filterung durchgeführt. Die Filterfunktion gibt nur Gerichte zurück, deren
+  // category zur aktuell ausgewählten Kategorie passt.
   const visibleItems = useMemo(
     () => menuItems.filter((item) => item.category === activeCategory),
     [activeCategory],
   );
+
+  // ceil() rundet auf die nächste, ganze Zahl auf,
+  // damit das letzt Gericht nicht verschluckt wird
+  // z.B. itemPerPage = 2 | 5 Dishes = 5 / 2 = 2.5 Pages
+  // ceil rundet dann auf 3 Pages auf
+
+  // slice() nimmt nur den Ausschnitt der Gerichte für die aktuelle Seite.
+  // So werden pro Seite höchstens itemsPerPage Karten angezeigt.
+  const pageCount = Math.ceil(visibleItems.length / itemsPerPage);
+  const paginatedItems = visibleItems.slice(
+    currentPage * itemsPerPage,
+    currentPage * itemsPerPage + itemsPerPage,
+  );
+
+  // Beim Wechsel der Kategorie beginnen wir wieder auf der ersten Seite.
+  const handleCategorySelect = (category) => {
+    setActiveCategory(category);
+    setCurrentPage(0);
+  };
 
   return (
       <>
@@ -113,7 +186,7 @@ export default function MenuPage() {
 
         <CategoryTabs
           activeCategory={activeCategory}
-          onSelect={setActiveCategory}
+          onSelect={handleCategorySelect}
         />
 
         <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-16">
@@ -126,20 +199,25 @@ export default function MenuPage() {
           </h2>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {visibleItems.map((item) => (
+            {/* Nur die Gerichte der aktuellen Seite werden als Karten erzeugt. */}
+            {paginatedItems.map((item) => (
               <DishCard key={item.title} {...item} />
             ))}
           </div>
 
-          <div className="mt-12 flex justify-center gap-2" aria-label="Menüseite">
-            {[0, 1, 2, 3, 4, 5].map((page) => (
-              <span
+          <nav className="mt-12 flex justify-center gap-2" aria-label="Menüseiten">
+            {/* Array.from erzeugt genau so viele Buttons, wie es Menüseiten gibt. */}
+            {Array.from({ length: pageCount }, (_, page) => (
+              <button
                 key={page}
-                className={`h-4 w-4 rounded-full ${page === 0 ? 'bg-zinc-500' : 'bg-zinc-200'}`}
-                aria-hidden="true"
+                type="button"
+                aria-label={`Menüseite ${page + 1}`}
+                aria-current={page === currentPage ? 'page' : undefined}
+                onClick={() => setCurrentPage(page)}
+                className={`h-4 w-4 rounded-full ${page === currentPage ? 'bg-zinc-500' : 'bg-zinc-200'}`}
               />
             ))}
-          </div>
+          </nav>
         </section>
 
         <Section
@@ -153,7 +231,6 @@ export default function MenuPage() {
           <img
             src="/images/info-icon.png"
             alt=""
-            aria-hidden="true"
             className="h-12 w-12 object-contain"
           />
 

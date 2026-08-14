@@ -28,6 +28,7 @@ const defaultCategories = [
 
 export default function CategoryTabs({
   categories = defaultCategories,
+  // Standardmäßig ist die erste Kategorie aktiv; ?. verhindert einen Fehler bei einer leeren Liste.
   activeCategory = categories[0]?.id,
   onSelect,
 }) {
@@ -44,7 +45,7 @@ export default function CategoryTabs({
             <button
               key={category.id}
               type="button"
-              aria-current={isActive ? 'page' : undefined}
+              aria-pressed={isActive}
               className={`group relative flex shrink-0 flex-col items-center gap-2 px-3 py-4 sm:flex-row ${
                 isActive
                   ? 'text-white'
@@ -55,7 +56,6 @@ export default function CategoryTabs({
               <img
                 src={category.icon}
                 alt=""
-                aria-hidden="true"
                 className="h-7 w-7 object-contain opacity-70 transition-opacity group-hover:opacity-100"
               />
               <span className="font-heading text-2xl uppercase leading-none sm:text-3xl">
