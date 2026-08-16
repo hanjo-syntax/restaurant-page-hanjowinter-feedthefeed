@@ -11,6 +11,7 @@ import VisitPage from './pages/VisitPage';
 import ImpressumPage from './pages/ImpressumPage';
 import DatenschutzPage from './pages/DatenschutzPage';
 import AllergenePage from './pages/AllergenePage';
+import ReservationPage from './pages/ReservationPage';
 
 export default function App() {
   return (
@@ -36,6 +37,10 @@ export default function App() {
         <Route
           path="/contact"
           element={<Page header footer Content={ContactPage} />}
+        />
+        <Route
+          path="/reserve"
+          element={<Page header footer Content={ReservationPage} />}
         />
         <Route
           path="/drops"

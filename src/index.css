@@ -14,6 +14,7 @@
     --font-heading: "Jersey 25", sans-serif;
     --font-bold: "Jersey 10", sans-serif;
     --animate-neon-pulse: neon-pulse 1s infinite alternate;
+    --animate-menu-switch: menu-switch 280ms ease-out both;
 
     @keyframes neon-pulse {
         0%, 100% {
@@ -30,6 +31,18 @@
 
         75% {
             filter: drop-shadow(0 0 6px var(--color-pink-400));
+        }
+    }
+
+    @keyframes menu-switch {
+        from {
+            opacity: 0;
+            transform: translateY(12px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }

@@ -198,10 +198,19 @@ export default function MenuPage() {
                 : activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)}
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            key={`${activeCategory}-${currentPage}`}
+            className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          >
             {/* Nur die Gerichte der aktuellen Seite werden als Karten erzeugt. */}
-            {paginatedItems.map((item) => (
-              <DishCard key={item.title} {...item} />
+            {paginatedItems.map((item, index) => (
+              <div
+                key={`${item.category}-${item.title}-${index}`}
+                className="motion-safe:animate-menu-switch"
+                style={{ animationDelay: `${index * 60}ms` }}
+              >
+                <DishCard {...item} />
+              </div>
             ))}
           </div>
 
