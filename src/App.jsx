@@ -3,6 +3,7 @@ import Page from './components/Page';
 
 import Homepage from './pages/Homepage';
 import MenuPage from './pages/MenuPage';
+import DishDetailsPage from './pages/DishDetailsPage';
 import FeedPage from './pages/FeedPage';
 import Error404Page from './pages/Error404Page';
 import ContactPage from './pages/ContactPage';
@@ -30,6 +31,10 @@ export default function App() {
           path="/menu"
           element={<Page header footer Content={MenuPage} />}
         />
+        <Route
+          path="/dish/:id"
+          element={<Page header footer Content={DishDetailsPage} />}
+          />
         <Route
           path="/feed"
           element={<Page header footer Content={FeedPage} />}

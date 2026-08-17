@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "category": "bao",
     "title": "K-Pop Crunch Bao",
     "description": "Knuspriger Blumenkohl, Kimchi, Sesam und Neon-Mayo.",
@@ -8,6 +9,7 @@
     "imageUrl": "/images/korean-fried-cauliflower-bao.png"
   },
   {
+    "id":"2",
     "category": "bao",
     "title": "Seoul BBQ Bao",
     "description": "Zartes BBQ, knackiger Salat und würzige Gochujang-Sauce.",
@@ -16,6 +18,7 @@
     "imageUrl": "/images/korean-fried-cauliflower-bao-pair.png"
   },
   {
+    "id":"3",
     "category": "bao",
     "title": "Neon Tofu Bao",
     "description": "Knuspriger Tofu, Gurke, Frühlingszwiebel und Sesam.",
@@ -24,6 +27,7 @@
     "imageUrl": "/images/neon-ramen-bowl-bao-buns.png"
   },
   {
+    "id":"3",
     "category": "bao",
     "title": "Miso Mushroom Bao",
     "description": "Gebratene Pilze, Miso-Glasur und cremige Chili-Mayo.",
@@ -32,6 +36,7 @@
     "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
   },
   {
+    "id":"4",
     "category": "bao",
     "title": "Neon Tofu Bao",
     "description": "Knuspriger Tofu, Gurke, Frühlingszwiebel und Sesam.",
@@ -40,6 +45,7 @@
     "imageUrl": "/images/neon-ramen-bowl-bao-buns.png"
   },
   {
+    "id":"5",
     "category": "bao",
     "title": "Miso Mushroom Bao",
     "description": "Gebratene Pilze, Miso-Glasur und cremige Chili-Mayo.",
@@ -48,6 +54,7 @@
     "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
   },
   {
+    "id":"6",
     "category": "bao",
     "title": "K-Pop Crunch Bao",
     "description": "Knuspriger Blumenkohl, Kimchi, Sesam und Neon-Mayo.",
@@ -56,6 +63,7 @@
     "imageUrl": "/images/korean-fried-cauliflower-bao.png"
   },
   {
+    "id":"7",
     "category": "bao",
     "title": "Seoul BBQ Bao",
     "description": "Zartes BBQ, knackiger Salat und würzige Gochujang-Sauce.",
@@ -64,6 +72,7 @@
     "imageUrl": "/images/korean-fried-cauliflower-bao-pair.png"
   },
   {
+    "id":"8",
     "category": "bowls",
     "title": "Seoul Glow Bowl",
     "description": "Tofu, Reis, knackiges Gemüse und Sesam-Dressing.",
@@ -72,6 +81,7 @@
     "imageUrl": "/images/korean-tofu-rice-bowl.png"
   },
   {
+    "id":"9",
     "category": "bowls",
     "title": "Pink Coconut Bowl",
     "description": "Kokosbrühe, Tofu, Gemüse und frische Kräuter.",
@@ -80,6 +90,7 @@
     "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
   },
   {
+    "id":"10",
     "category": "ramen",
     "title": "Tiger Ramen",
     "description": "Würzige Brühe, Mais, Ei, Pak Choi und Chiliöl.",
@@ -88,6 +99,7 @@
     "imageUrl": "/images/spicy-corn-ramen-bowl.png"
   },
   {
+    "id":"11",
     "category": "ramen",
     "title": "Pink Miso Ramen",
     "description": "Cremige Miso-Brühe, Tofu, Pak Choi und Rote-Bete-Nudeln.",
@@ -96,6 +108,7 @@
     "imageUrl": "/images/pink-broth-ramen-pork-bowl.png"
   },
   {
+    "id":"12",
     "category": "sweets",
     "title": "Matcha Cheesecake",
     "description": "Cremiger Matcha-Käsekuchen mit knusprigem Boden.",
@@ -104,6 +117,7 @@
     "imageUrl": "/images/matcha-cheesecake-pink-cocktail.png"
   },
   {
+    "id":"13",
     "category": "drinks",
     "title": "Neon Pink",
     "description": "Fruchtiger Cocktail mit leuchtendem Neon-Finish.",
