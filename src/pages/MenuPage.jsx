@@ -3,7 +3,11 @@ import Button from '../components/Button';
 import CategoryTabs from '../components/CategoryTabs';
 import DishCard from '../components/DishCard';
 import Section from '../components/Section';
-import dishes from '../data/dishes.json';
+// Import der Gerichte. "with {type: 'JSON}" kann man auch
+// als "import {dishes} from '../data/dishes.json'" schreiben.
+// In Vite-Projekten werden .json-Dateien automatisch erkannt und verarbeitet.
+ 
+import dishes from '../data/dishes.json' with {type:'json'};
 
 export default function MenuPage() {
   // Der React-Hook useState speichert einen Wert, der sich während der Nutzung der Seite ändern kann
