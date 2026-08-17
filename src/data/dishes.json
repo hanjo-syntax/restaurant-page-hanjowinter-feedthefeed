@@ -1,0 +1,114 @@
+[
+  {
+    "category": "bao",
+    "title": "K-Pop Crunch Bao",
+    "description": "Knuspriger Blumenkohl, Kimchi, Sesam und Neon-Mayo.",
+    "price": "8,50",
+    "tags": ["vegan", "scharf"],
+    "imageUrl": "/images/korean-fried-cauliflower-bao.png"
+  },
+  {
+    "category": "bao",
+    "title": "Seoul BBQ Bao",
+    "description": "Zartes BBQ, knackiger Salat und würzige Gochujang-Sauce.",
+    "price": "9,50",
+    "tags": ["scharf"],
+    "imageUrl": "/images/korean-fried-cauliflower-bao-pair.png"
+  },
+  {
+    "category": "bao",
+    "title": "Neon Tofu Bao",
+    "description": "Knuspriger Tofu, Gurke, Frühlingszwiebel und Sesam.",
+    "price": "8,90",
+    "tags": ["vegan"],
+    "imageUrl": "/images/neon-ramen-bowl-bao-buns.png"
+  },
+  {
+    "category": "bao",
+    "title": "Miso Mushroom Bao",
+    "description": "Gebratene Pilze, Miso-Glasur und cremige Chili-Mayo.",
+    "price": "8,90",
+    "tags": ["vegan"],
+    "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
+  },
+  {
+    "category": "bao",
+    "title": "Neon Tofu Bao",
+    "description": "Knuspriger Tofu, Gurke, Frühlingszwiebel und Sesam.",
+    "price": "8,90",
+    "tags": ["vegan"],
+    "imageUrl": "/images/neon-ramen-bowl-bao-buns.png"
+  },
+  {
+    "category": "bao",
+    "title": "Miso Mushroom Bao",
+    "description": "Gebratene Pilze, Miso-Glasur und cremige Chili-Mayo.",
+    "price": "8,90",
+    "tags": ["vegan"],
+    "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
+  },
+  {
+    "category": "bao",
+    "title": "K-Pop Crunch Bao",
+    "description": "Knuspriger Blumenkohl, Kimchi, Sesam und Neon-Mayo.",
+    "price": "8,50",
+    "tags": ["vegan", "scharf"],
+    "imageUrl": "/images/korean-fried-cauliflower-bao.png"
+  },
+  {
+    "category": "bao",
+    "title": "Seoul BBQ Bao",
+    "description": "Zartes BBQ, knackiger Salat und würzige Gochujang-Sauce.",
+    "price": "9,50",
+    "tags": ["scharf"],
+    "imageUrl": "/images/korean-fried-cauliflower-bao-pair.png"
+  },
+  {
+    "category": "bowls",
+    "title": "Seoul Glow Bowl",
+    "description": "Tofu, Reis, knackiges Gemüse und Sesam-Dressing.",
+    "price": "12,90",
+    "tags": ["vegan"],
+    "imageUrl": "/images/korean-tofu-rice-bowl.png"
+  },
+  {
+    "category": "bowls",
+    "title": "Pink Coconut Bowl",
+    "description": "Kokosbrühe, Tofu, Gemüse und frische Kräuter.",
+    "price": "13,50",
+    "tags": ["vegan", "scharf"],
+    "imageUrl": "/images/pink-coconut-ramen-tofu-bowl.png"
+  },
+  {
+    "category": "ramen",
+    "title": "Tiger Ramen",
+    "description": "Würzige Brühe, Mais, Ei, Pak Choi und Chiliöl.",
+    "price": "13,90",
+    "tags": ["scharf"],
+    "imageUrl": "/images/spicy-corn-ramen-bowl.png"
+  },
+  {
+    "category": "ramen",
+    "title": "Pink Miso Ramen",
+    "description": "Cremige Miso-Brühe, Tofu, Pak Choi und Rote-Bete-Nudeln.",
+    "price": "14,50",
+    "tags": ["vegan"],
+    "imageUrl": "/images/pink-broth-ramen-pork-bowl.png"
+  },
+  {
+    "category": "sweets",
+    "title": "Matcha Cheesecake",
+    "description": "Cremiger Matcha-Käsekuchen mit knusprigem Boden.",
+    "price": "6,50",
+    "tags": [],
+    "imageUrl": "/images/matcha-cheesecake-pink-cocktail.png"
+  },
+  {
+    "category": "drinks",
+    "title": "Neon Pink",
+    "description": "Fruchtiger Cocktail mit leuchtendem Neon-Finish.",
+    "price": "7,90",
+    "tags": [],
+    "imageUrl": "/images/neon-restaurant-table-pink-cocktail.png"
+  }
+]
